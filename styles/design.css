@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 .inter-normal {
   font-family: "Inter", sans-serif;
@@ -12,6 +12,22 @@
 
 
 
+.noto-serif-normal {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.orange-color{
+  color: rgba(233, 90, 8, 1);
+}
+.light-grey-text{
+  color: rgba(0, 0, 0, 0.5);
+}
 
 .navbar{
   display: flex;
@@ -36,6 +52,52 @@
   margin-left: 8.75rem;
 }
 
-.nav-item-4{
+.nav-item-2{
+  color: #8987A1;
+  font-size: 1rem;
+}
+.nav-item-3{
+  color: #8987A1;
+  font-size: 1rem;
+}
+.nav-item-1{
+  color: #252432;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.hero {
+  margin-left: 8.75rem;
+  margin-right: 9.75rem;
+  margin-top: 7.5rem;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   
 }
+
+.hero-text {
+  max-width: 550px;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+
+.hero-image img {
+  max-width: 25rem;
+
+}
+
