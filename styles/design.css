@@ -21,6 +21,9 @@
     "wdth" 100;
 }
 
+*{
+  margin: 0;
+}
 
 .orange-color{
   color: rgba(233, 90, 8, 1);
@@ -276,3 +279,50 @@ background-color: #e03a00;
   font-size: 1.75rem;
   font-weight: bold;
 }
+
+
+/* connect part */
+.subscription {
+            background-image: url('../assets/news-letter-bg.png'); 
+            background-size: cover;
+            background-position: center;
+            height:33.3125rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            padding: 20px;
+            margin-bottom: 1rem;
+        }
+        .subscription-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .subscription h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .subscription-form {
+            display: flex;
+            
+        }
+        .subscription-form input {
+            padding: 10px;
+            font-size: 1rem;
+            width: 250px;
+            border: none;
+            
+        }
+        .subscription-form button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #ff4500;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
