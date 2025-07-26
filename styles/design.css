@@ -381,28 +381,21 @@ background-color: #e03a00;
 
 /* media responses */
 @media screen and (max-width: 576px) {
-  /* .navbar {
-    flex-direction: column;
-    margin-right: 0;
-    padding: 1rem;
+  * {
+    margin: 0;
+    padding: 0;
   }
 
-  .nav-container {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1rem;
-  } */
-
-  #logo-main{
-    margin-left: 5rem;
+  .fa-shopping-cart {
+    margin-left: 7.5rem;
   }
 
-
-
-  #shop-gone{
+  #shop-gone,
+  #home-gone {
     visibility: hidden;
   }
-  #about-gone{
+
+  #about-gone {
     visibility: hidden;
   }
 
@@ -421,11 +414,12 @@ background-color: #e03a00;
   }
 
   .hero-content {
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
   }
 
   .hero-text {
+    text-align: left;
     max-width: 100%;
     margin-bottom: 1rem;
   }
@@ -439,14 +433,29 @@ background-color: #e03a00;
   }
 
   .hero-image img {
-    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    justify-content: end;
+    margin-left: 6rem;
   }
 
   .card-container {
-    grid-template-columns: repeat(2,2fr); /* Single column for cards */
-    width: calc(100% - 5px);
-    margin-left: 1rem;
-    margin-right: 1rem;
+    grid-template-columns: repeat(2, 1fr); 
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 1rem;
+    gap: 1rem;
+  }
+
+  .card {
+    width: 100%; /* Each card takes half the screen width */
+    margin: 0;
+  }
+
+  .card img {
+    width: 100%; /* Image takes 100% of card width, which is 50% of screen */
+    height: auto;
   }
 
   .plants-lover-container {
@@ -457,6 +466,20 @@ background-color: #e03a00;
   }
 
   .image-section {
+    width: 100%; /* Full width on mobile */
+    height: 20rem; /* Adjusted height for mobile */
+    background-image: url('../assets/flower-store.png'); /* Reconfirmed path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .plant-text{
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .image-section {
     width: 100%;
     height: auto;
     background-size: contain;
@@ -464,11 +487,6 @@ background-color: #e03a00;
   }
 
   .badge {
-    /* position: absolute;
-    top: -2rem;
-    right: -2rem;
-    width: 10rem;
-    height: 10rem; */
     visibility: hidden;
   }
 
@@ -482,7 +500,9 @@ background-color: #e03a00;
     gap: 1rem;
   }
 
-  .image-1, .image-2, .image-3 {
+  .image-1,
+  .image-2,
+  .image-3 {
     width: 100%;
     height: 10rem;
   }
