@@ -163,10 +163,10 @@ background-color: #e03a00;
   position: relative;
   background-image: url('../assets/flower-store.png');
   background-repeat: no-repeat;
-  width: 33.75rem;
+  width: 100rem;
   height: 36.875rem;
-  
-
+  background-size: cover;
+  min-height: 20rem;
   
 }
 .badge {
@@ -384,10 +384,11 @@ background-color: #e03a00;
   * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
 
   .fa-shopping-cart {
-    margin-left: 7.5rem;
+    margin-left: 12rem;
   }
 
   #shop-gone,
@@ -436,13 +437,14 @@ background-color: #e03a00;
     width: 100%;
     margin: 0;
     justify-content: end;
-    margin-left: 6rem;
+    margin-left: 9.9rem;
+    margin-bottom: 2rem;
   }
 
   .card-container {
     grid-template-columns: repeat(2, 1fr); 
     width: 100%;
-    margin-left: 0;
+    margin-left: 2.5rem;
     margin-right: 0;
     padding: 0 1rem;
     gap: 1rem;
@@ -467,16 +469,28 @@ background-color: #e03a00;
 
   .image-section {
     width: 100%; /* Full width on mobile */
-    height: 20rem; /* Adjusted height for mobile */
-    background-image: url('../assets/flower-store.png'); /* Reconfirmed path */
+    height: 20rem; 
+    background-image: url('../assets/flower-store.png'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin-left: 2rem;
   }
   .plant-text{
     width: 100%;
+    margin-left: 2.75rem;
     text-align: center;
-    margin-left: 0;
+    
+  }
+  
+  .lover-text-header{
+    text-align: left;
+    width: 35rem;
+    
+  }
+
+  .light-grey-text li{
+    margin-left: 1rem;
   }
 
   .image-section {
@@ -501,11 +515,20 @@ background-color: #e03a00;
   }
 
   .image-1,
-  .image-2,
+  .image-2
+  {
+    width: 100%;
+    
+    border-radius: 25px;
+    margin-left: 3rem;
+  }
   .image-3 {
     width: 100%;
-    height: 10rem;
+    margin-top: 10px;
+    border-radius: 25px;
+    margin-left: 3rem;
   }
+  
 
   .image-3 {
     grid-row: auto;
@@ -514,6 +537,8 @@ background-color: #e03a00;
 
   .subscription {
     height: 20rem;
+    width: 36rem;
+    margin-right: 0;
   }
 
   .subscription-form input {
