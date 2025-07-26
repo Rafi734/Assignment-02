@@ -104,11 +104,12 @@
 .plant-header{
   text-align: center;
   font-size: 3.125 rem;
-  font-weight: 700;
+  font-weight: 800;
 }
 .plant-text{
   font-size: 22px;
   text-align: center;
+  margin: 0 126px 0 126px;
   
 }
 
@@ -156,11 +157,71 @@ background-color: #e03a00;
 /* lover section */
 
 .image-section{
+  position: relative;
   background-image: url('../assets/flower-store.png');
   background-repeat: no-repeat;
+  width: 33.75rem;
+  height: 36.875rem;
+  
+  /* background-size: contain; */
+  /* margin-left: 9.375rem;
+  margin-top: 12.5rem; */
+  
+}
+.badge {
+  position: absolute; 
+  top: -6rem;             
+  right: -6rem;
+  width: 17.875rem; 
+  height: 17.875rem; 
+  background-image: url('../assets/trusted-badge.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* margin-left: 21.875rem;
+  margin-bottom: 100px; */
+  
+  
+}
+
+
+.plants-lover-container{
+  display: flex;
   margin-left: 9.375rem;
   margin-top: 12.5rem;
+  margin-right: 9.375rem;
+  margin-bottom: 10.625rem;
+ gap: 7rem;
 }
-.badge{
-  
+
+.text-section{
+  max-width: 540px;
+}
+.text-section li{
+  margin-bottom: 1.25rem;
+  font-size: 1.375rem;
+}
+
+.lover-text-header{
+  font-size: 3.125rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 1);
+}
+
+/* latest deals styles */
+
+.image-1{
+  background-image: url(../assets/deal-bloom.png);
+}
+
+.image-2{
+  background-image: url(../assets/deal-ana.png);
+}
+.image-3{
+  background-image: url(../assets/deal-zabo.png);
+  background-repeat: none;
+}
+
+.image-container{
+  display: grid;
+  grid-template-rows: (2,1fr);
 }
