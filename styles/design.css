@@ -101,3 +101,66 @@
 
 }
 
+.plant-header{
+  text-align: center;
+  font-size: 3.125 rem;
+  font-weight: 700;
+}
+.plant-text{
+  font-size: 22px;
+  text-align: center;
+  
+}
+
+
+ .card {
+ background-color: white;
+width: 16.875rem;
+margin: 10px;
+text-align: center;
+padding: 10px;
+
+ }
+.card img {
+ max-width: 100%;
+height: auto;
+}
+.card h3 {
+ margin: 10px 0;
+color: #333;
+}
+.card p {
+ color: #666;
+ margin: 5px 0;
+}
+.card button {
+background-color: #ff4500;
+color: white;
+ border: none;
+padding: 10px;
+cursor: pointer;
+width: 100%;
+font-weight: bold;
+}
+.card button:hover {
+background-color: #e03a00;
+}
+
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin-left: 9.375rem;
+  margin-right: 9.375rem;
+}
+
+/* lover section */
+
+.image-section{
+  background-image: url('../assets/flower-store.png');
+  background-repeat: no-repeat;
+  margin-left: 9.375rem;
+  margin-top: 12.5rem;
+}
+.badge{
+  
+}
